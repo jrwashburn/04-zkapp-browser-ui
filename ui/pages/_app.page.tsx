@@ -81,7 +81,7 @@ export default function App() {
         });
       }
     })();
-  });
+  },[state]);
 
   // -------------------------------------------------------
   // Wait for account to exist, if it didn't
@@ -101,7 +101,7 @@ export default function App() {
         setState({ ...state, accountExists: true });
       }
     })();
-  } );
+  }, [state, state.hasBeenSetup] );
 
   // -------------------------------------------------------
   // Send a transaction
