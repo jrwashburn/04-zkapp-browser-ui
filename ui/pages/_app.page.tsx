@@ -6,7 +6,6 @@ import ZkappWorkerClient from './zkappWorkerClient';
 
 import {
   PublicKey,
-  PrivateKey,
   Field,
 } from 'snarkyjs'
 
@@ -82,7 +81,7 @@ export default function App() {
         });
       }
     })();
-  }, []);
+  });
 
   // -------------------------------------------------------
   // Wait for account to exist, if it didn't
@@ -102,7 +101,7 @@ export default function App() {
         setState({ ...state, accountExists: true });
       }
     })();
-  }, [state.hasBeenSetup]);
+  } );
 
   // -------------------------------------------------------
   // Send a transaction
@@ -126,7 +125,7 @@ export default function App() {
       transaction: transactionJSON,
       feePayer: {
         fee: transactionFee,
-        memo: '',
+        memo: 'Why does this fail?',
       },
     });
 

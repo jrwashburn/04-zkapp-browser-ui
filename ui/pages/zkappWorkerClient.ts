@@ -1,7 +1,6 @@
 import {
   fetchAccount,
   PublicKey,
-  PrivateKey,
   Field,
 } from 'snarkyjs'
 

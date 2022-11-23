@@ -2,8 +2,6 @@ import {
   Mina,
   isReady,
   PublicKey,
-  PrivateKey,
-  Field,
   fetchAccount,
 } from 'snarkyjs'
 

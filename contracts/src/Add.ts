@@ -41,6 +41,6 @@ export class Add extends SmartContract {
     const newState = currentState.add(2);
     newState.assertEquals(currentState.add(2));
     this.num.set(newState);
-    this.requireSignature();
+    //this.requireSignature();
   }
 }
